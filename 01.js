@@ -12,7 +12,21 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+  let numeros = [];
+
+  // Iteramos sobre cada elemento del arreglo
+  for (let i = 0; i < array.length; i++) {
+    // Comprobamos si el elemento es un número
+    if (typeof array[i] === 'number' && !isNaN(array[i])) {
+      // Si es un número, lo agregamos al arreglo 'numeros'
+      numeros.push(array[i]);
+    }
+  }
+
+  return numeros;
 }
+
+soloNumeros([1, 'Henry', 2])
 
 // No modifiques nada debajo de esta linea //
 

@@ -14,8 +14,26 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
-}
+  var stringNum = num.toString();
+  
 
+  var inicio=0;
+  var final=stringNum.length -1;
+
+  while (inicio<final) {
+    if(stringNum[inicio]!==stringNum[final]){
+      return false;
+    }
+    inicio++;
+    final--;
+    
+  }
+
+  return true;
+  
+
+}
+numeroSimetrico(11711)
 // No modifiques nada debajo de esta linea //
 
 module.exports = numeroSimetrico
